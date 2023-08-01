@@ -51,10 +51,10 @@ const Header = () => {
       setStates()
   }, [setStates])
   return (
-    <header ref={header} className='bg-transparent fixed w-full py-4 z-[3]'>
+    <header ref={header} className='bg-[#1A63E4] fixed w-full py-4 z-[3]'>
       <div className="flex pl-7 items-center">
-        <div className="w-[40%] font-eScript text-[#FDAD20] text-[2rem]">
-          Alchemy
+        <div className="w-[40%]">
+          <Image src="/Images/logo.svg" alt="logo" height={1} width={130} />
         </div>
         <nav className="w-[50%] mainNav" ref={navRef}>
           <ul className="flex flex-col md:flex-row text-center md:text-left justify-evenly font-poppins text-white">
