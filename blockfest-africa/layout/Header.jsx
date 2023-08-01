@@ -51,7 +51,7 @@ const Header = () => {
       setStates()
   }, [setStates])
   return (
-    <header ref={header} className='bg-[#1A63E4] fixed w-full py-4 z-[3]'>
+    <header ref={header} className='bg-[#1a63e41a] fixed w-full py-4 z-[3]'>
       <div className="flex pl-7 items-center">
         <div className="w-[40%]">
           <Image src="/Images/logo.svg" alt="logo" height={1} width={130} />
@@ -60,22 +60,22 @@ const Header = () => {
           <ul className="flex flex-col md:flex-row text-center md:text-left justify-evenly font-poppins text-white">
             <li className={`${home}`}>
               <Link href="#">
-                Home
+                About
               </Link>
             </li>
             <li className={`${about}`}>
               <Link href="#about">
-                About
+                Speakers
               </Link>
             </li>
             <li className={`${speaker}`}>
               <Link href="#speakers">
-                Speakers
+                Patners
               </Link>
             </li>
             <li className={`${testimony}`}>
               <Link href="#testimonies">
-                Testimonies
+                Event 
               </Link>
             </li>
           </ul>
