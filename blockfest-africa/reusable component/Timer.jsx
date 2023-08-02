@@ -6,7 +6,7 @@ const Timer = () => {
     const [min, setMin] = useState("00")
     const [sec, setSec] = useState("00")
     const countDown = useCallback(() => {
-        const eventTime = new Date('August 18, 2023 18:00:00').getTime()
+        const eventTime = new Date('October 21, 2023 18:00:00').getTime()
         const currentTime = new Date().getTime()
         const gap = eventTime - currentTime
         const second = 1000
