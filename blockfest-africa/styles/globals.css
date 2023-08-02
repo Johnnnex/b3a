@@ -5,17 +5,19 @@
 @tailwind components;
 @tailwind utilities;
 
+html {
+  scroll-behavior: smooth;
+}
 body {
   background-color: #050E2B;
 }
-
 header {
   transition: .5s;
 }
 .header-sticky {
   background-color: #1a63e4 !important;
   transition: .5s;
-  padding-block: 0.2rem;
+  padding-block: 0;
 }
 .header-sticky li:hover::before,
 .header-sticky li:hover::after {
