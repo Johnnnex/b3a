@@ -35,7 +35,33 @@ li:hover {
 .burgerNav svg:last-child {
   transform: rotate(-45deg) translateX(20%);
 }
-
+h1 {
+  position: relative;
+  -webkit-text-stroke: 0.2px #fff;
+  color: transparent !important;
+}
+h1::before {
+  content: attr(text-data);
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: #fff;
+  width: 10%;
+  height: 100%;
+  border-right: 2px solid #1A63E4;
+  overflow: hidden;
+  -webkit-text-stroke: 0px #fff;
+  animation: animate 6s linear infinite;
+}
+ @keyframes animate 
+ {
+    0%, 10%, 100% {
+      width: 0%;
+    }
+    70%, 90% {
+      width: 100%;
+    }
+ }
 
 @media all and (max-width: 768px){
   .mainNav{

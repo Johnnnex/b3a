@@ -1,10 +1,10 @@
 import React, { useEffect, useCallback, useState } from 'react'
 
 const Timer = () => {
-    const [dy, setDy] = useState()
-    const [hrs, setHrs] = useState()
-    const [min, setMin] = useState()
-    const [sec, setSec] = useState()
+    const [dy, setDy] = useState("00")
+    const [hrs, setHrs] = useState("00")
+    const [min, setMin] = useState("00")
+    const [sec, setSec] = useState("00")
     const countDown = useCallback(() => {
         const eventTime = new Date('August 18, 2023 18:00:00').getTime()
         const currentTime = new Date().getTime()
