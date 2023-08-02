@@ -51,36 +51,45 @@ const Header = () => {
       setStates()
   }, [setStates])
   return (
-    <header ref={header} className='bg-[#1a63e41a] fixed w-full py-4 z-[3]'>
-      <div className="flex pl-7 items-center">
-        <div className="w-[40%]">
+    <header ref={header} className='bg-[#1a63e41a] fixed w-full py-3 z-[3]'>
+      <div className="flex px-7 justify-between items-center">
+        <div className="w-[15%]">
           <Image src="/Images/logo.svg" alt="logo" height={1} width={130} />
         </div>
-        <nav className="w-[50%] mainNav" ref={navRef}>
-          <ul className="flex flex-col md:flex-row text-center md:text-left justify-evenly font-poppins text-white">
-            <li className={`${home}`}>
-              <Link href="#">
-                About
-              </Link>
-            </li>
-            <li className={`${about}`}>
-              <Link href="#about">
-                Speakers
-              </Link>
-            </li>
-            <li className={`${speaker}`}>
-              <Link href="#speakers">
-                Patners
-              </Link>
-            </li>
-            <li className={`${testimony}`}>
-              <Link href="#testimonies">
-                Event 
-              </Link>
-            </li>
-          </ul>
+        <nav className="w-[80%] mainNav" ref={navRef}>
+          <div className="flex items-center justify-between">
+            <ul className="flex w-[60%] flex-col md:flex-row text-center md:text-left justify-between font-poppins text-white">
+              <li className={`${home}`}>
+                <Link href="#">
+                  About
+                </Link>
+              </li>
+              <li className={`${about}`}>
+                <Link href="#about">
+                  Speakers
+                </Link>
+              </li>
+              <li className={`${speaker}`}>
+                <Link href="#speakers">
+                  Patners
+                </Link>
+              </li>
+              <li className={`${testimony}`}>
+                <Link href="#testimonies">
+                  Event Schedule
+                </Link>
+              </li>
+              <li className={`${testimony}`}>
+                <Link href="#testimonies">
+                  FAQ
+                </Link>
+              </li>
+            </ul>
+            <div className="w-[20%] font-poppins">
+              <button className=" px-7 py-2 bg-[#1BBE9F] rounded-[5px]">Register now</button>
+            </div>
+          </div>
         </nav>
-        <div className="w-[40%]"></div>
       </div>
       <div
 				onClick={handleClick}
