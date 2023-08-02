@@ -5,12 +5,15 @@
 @tailwind components;
 @tailwind utilities;
 
+body {
+  background-color: #050E2B;
+}
 
 header {
   transition: .5s;
 }
 .header-sticky {
-  background-color: #1a63e41a !important;
+  background-color: #1a63e4 !important;
   transition: .5s;
   padding-block: 0.2rem;
 }
@@ -18,10 +21,10 @@ li {
   transition: .4s;
 }
 li:hover {
-  border-bottom: 2px solid #FDAD20;
+  border-bottom: 2px solid #1A63E4;
 }
 .active {
-  border-bottom: 2px solid #FDAD20;
+  border-bottom: 2px solid #1A63E4;
 }
 .burgerNav svg {
   transition: .6s;
@@ -37,7 +40,7 @@ li:hover {
 }
 h1 {
   position: relative;
-  -webkit-text-stroke: 0.2px #fff;
+  -webkit-text-stroke: 0.25px #fff;
   color: transparent !important;
 }
 h1::before {
