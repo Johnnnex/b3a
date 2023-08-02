@@ -1,3 +1,4 @@
+import Timer from '@/reusable component/Timer'
 import React from 'react'
 
 const Index = () => {
@@ -11,6 +12,7 @@ const Index = () => {
             <div className="text-center font-poppins">
                 <button className=" px-7 py-2 bg-[#1A63E4] rounded-[5px]">Partner wih us</button>
             </div>
+            <Timer />
         </div>
     </section>
   )
