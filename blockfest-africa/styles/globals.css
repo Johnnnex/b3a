@@ -60,9 +60,10 @@ li:hover::after {
 li:hover {
   color: #1BBE9F;
 }
-/* .active {
-  border-bottom: 2px solid #1A63E4;
-} */
+.active::before,
+.active::after {
+  width: 100%;
+}
 .burgerNav svg {
   transition: .6s;
 }

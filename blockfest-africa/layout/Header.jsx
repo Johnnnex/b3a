@@ -59,27 +59,27 @@ const Header = () => {
         <nav className="w-[80%] mainNav" ref={navRef}>
           <div className="flex items-center justify-between">
             <ul className="flex w-[60%] flex-col md:flex-row text-center md:text-left justify-between font-poppins text-white">
-              <li className={`${home}`}>
+              <li className={`${home} py-1 px-3`}>
                 <Link href="#">
                   About
                 </Link>
               </li>
-              <li className={`${about}`}>
+              <li className={`${about} py-1 px-3`}>
                 <Link href="#about">
                   Speakers
                 </Link>
               </li>
-              <li className={`${speaker}`}>
+              <li className={`${speaker} py-1 px-3`}>
                 <Link href="#speakers">
                   Patners
                 </Link>
               </li>
-              <li className={`${testimony}`}>
+              <li className={`${testimony} py-1 px-3`}>
                 <Link href="#testimonies">
                   Event Schedule
                 </Link>
               </li>
-              <li className={`${testimony}`}>
+              <li className={`${testimony} py-1 px-3`}>
                 <Link href="#testimonies">
                   FAQ
                 </Link>
