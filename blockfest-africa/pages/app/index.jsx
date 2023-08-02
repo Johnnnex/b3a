@@ -1,5 +1,7 @@
-import Timer from '@/reusable component/Timer'
 import React from 'react'
+import Timer from '@/reusable component/Timer'
+import { PureImgLoader, ImgLoader } from "@/reusable component/img-loaders"
+
 
 const Index = () => {
   return (
@@ -37,6 +39,32 @@ const Index = () => {
                     <div className="font-poppins">
                         <button className=" px-7 py-2 bg-[#1A63E4] text-white rounded-[5px]">Partner wih us</button>
                 </div>
+                </div>
+            </div>
+        </section>
+        <section className="px-4 md:px-0 py-[3.5rem]" id="speakers">
+            <h2 className="font-poppins wow fadeIn text-center font-[600] text-[2rem] mb-[4rem] text-white">Meet Our Speakers</h2>
+            <div className="flex flex-wrap md:w-[80%] mx-auto">
+                <div className="w-[20rem] p-2 wow fadeIn mx-auto mb-7">
+                    <div className="rounded-[1rem] overflow-hidden">
+                    <ImgLoader source="/Images/sayrah.jpg" altText="speaker" width={300} />
+                    </div>
+                    <p className=" font-poppins text-white font-[900] mt-[1rem] mb-[0.3rem]">Sarah Idahosa</p>
+                    <small className="font-poppins text-white">CM Cassava Network, Founder WID</small>
+                </div>
+                <div className="w-[20rem] p-2 wow fadeIn mx-auto mb-7">
+                    <div className="rounded-[1rem] overflow-hidden">
+                    <ImgLoader source="/Images/xeus.jpg" width={300} altText="speaker" />
+                    </div>
+                    <p className=" font-poppins text-white font-[900] mt-[1rem] mb-[0.3rem]">Xeus</p>
+                    <small className="font-poppins text-white">Founder, NIRVANA Academy & Labs </small>
+                </div>
+                <div className="w-[20rem] wow p-2 fadeIn mx-auto mb-7">
+                    <div className="rounded-[1rem] overflow-hidden">
+                    <ImgLoader source="/Images/idris.jpg" altText="speaker" width={300} />
+                    </div>
+                    <p className=" font-poppins text-white font-[900] mt-[1rem] mb-[0.3rem]">Idris</p>
+                    <small className="font-poppins text-white">Developer Advocate, Axelar</small>
                 </div>
             </div>
         </section>
