@@ -17,15 +17,52 @@ header {
   transition: .5s;
   padding-block: 0.2rem;
 }
+.header-sticky li:hover::before,
+.header-sticky li:hover::after {
+  background-color: #1BBE9F;
+}
+.header-sticky li:hover {
+  color: #050E2B;
+}
 li {
   transition: .4s;
+  position: relative;
+}
+li::before,
+li::after {
+  position: absolute;
+  content: "";
+  width: 0%;
+  height: 2px;
+  background-color: #fff;
+  transition: 0.3s ease-in-out;
+}
+li::before {
+  top: 0;
+  left: 0;
+}
+li::after {
+  bottom: 0;
+  left: 0;
+}
+li:hover::before {
+  right: 0;
+  left: auto;
+  width: 100%;
+  background-color: #1A63E4;
+}
+li:hover::after {
+  right: auto;
+  left: 0;
+  width: 100%;
+  background-color: #1A63E4;
 }
 li:hover {
-  border-bottom: 2px solid #1A63E4;
+  color: #1BBE9F;
 }
-.active {
+/* .active {
   border-bottom: 2px solid #1A63E4;
-}
+} */
 .burgerNav svg {
   transition: .6s;
 }
