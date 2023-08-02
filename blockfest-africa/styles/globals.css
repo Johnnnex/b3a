@@ -21,7 +21,7 @@ header {
 }
 .header-sticky li:hover::before,
 .header-sticky li:hover::after {
-  background-color: #1BBE9F;
+  background-color: #050E2B;
 }
 .header-sticky li:hover {
   color: #050E2B;
@@ -60,7 +60,7 @@ li:hover::after {
   background-color: #1A63E4;
 }
 li:hover {
-  color: #1BBE9F;
+  color: #1A63E4;
 }
 .active::before,
 .active::after {
