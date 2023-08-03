@@ -48,7 +48,7 @@ const Timer = () => {
         </p> :
         <p className="font-[700]">
             {sec} <br />
-            <small className="font-[100]">Seconds</small>
+            <small className="font-[100]">Second(s)</small>
         </p> 
         </div>
     </section>
