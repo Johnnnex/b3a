@@ -106,7 +106,10 @@ h1::before {
       width: 100%;
     }
  }
-
+.full-data p {
+  position: static;
+  transform: translateY(0);
+}
 @media all and (max-width: 768px){
   .mainNav{
       position: fixed;

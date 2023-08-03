@@ -1,6 +1,7 @@
 import React from 'react'
 import Timer from '@/reusable component/Timer'
 import { PureImgLoader, ImgLoader } from "@/reusable component/img-loaders"
+import FAQ from '@/reusable component/FAQ'
 
 
 const Index = () => {
@@ -68,6 +69,7 @@ const Index = () => {
                 </div>
             </div>
         </section>
+        <FAQ />
     </>
   )
 }
