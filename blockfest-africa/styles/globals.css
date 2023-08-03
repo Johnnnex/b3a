@@ -110,8 +110,8 @@ h1::before {
   position: static;
   transform: translateY(0);
 }
-.full-data ul {
-  list-style: decimal !important;
+.full-data ul li {
+  list-style-type: circle !important;
 }
 @media all and (max-width: 768px){
   .mainNav{

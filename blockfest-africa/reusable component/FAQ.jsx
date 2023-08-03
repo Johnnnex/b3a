@@ -121,8 +121,8 @@ const FAQ = () => {
                         {state.iconFour ? svgTwo() : svgOne()}
                     </button>
                 </div>
-                <ul className="font-poppins duration-500 md:translate-y-[-33rem] translate-y-[-43rem] absolute">
-                    <li className="list-disc">Provide a gathering of developers, creatives, digital creators</li>
+                <ul className="list-disc font-poppins duration-500 md:translate-y-[-33rem] translate-y-[-43rem] absolute">
+                    <li className="">Provide a gathering of developers, creatives, digital creators</li>
                 </ul>
             </div>
             <div
