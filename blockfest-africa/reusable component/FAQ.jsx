@@ -59,7 +59,7 @@ const FAQ = () => {
         <div className="wow flipInX w-[90%] md:w-3/5 mx-auto text-white p-[1rem] md:p-[3rem] rounded-[8px] space-y-[2rem]">
             <div
                 ref={One}
-                className=" overflow-hidden relative border-[1px] rounded-[5px] border-[#808080] p-2 mx-auto space-y-[1rem]"
+                className=" overflow-hidden relative rounded-[5px] p-2 mx-auto space-y-[1rem]"
             >
                 <div className=" flex justify-between items-center">
                     <h3 className="font-poppins w-[80%] font-bold my-2">What is BlockFest</h3>
@@ -76,10 +76,10 @@ const FAQ = () => {
             </div>
             <div
                 ref={Two}
-                className=" overflow-hidden relative border-[1px] rounded-[5px] border-[#808080] p-2 mx-auto space-y-[1rem]"
+                className=" overflow-hidden relative rounded-[5px] p-2 mx-auto space-y-[1rem]"
             >
                 <div className=" flex justify-between items-center">
-                    <h3 className="font-EuclidCircularA w-[80%] font-bold my-2">What services does Pontys offer?</h3>
+                    <h3 className="font-EuclidCircularA w-[80%] font-bold my-2">What differs BlockFest from other events?</h3>
                     <button
                         onClick={() => dispatch({ type: "IconTwo" }, revealData(Two))}
                         className=" h-5 w-5"
