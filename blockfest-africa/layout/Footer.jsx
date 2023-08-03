@@ -42,10 +42,9 @@ const Footer = () => {
     setStates()
   }, [setStates])
   return (
-    <footer className="w-full py-8 bg-[#242222]">
+    <footer className="w-full py-8">
       <div className="flex md:items-center md:pl-8 flex-col md:flex-row gap-9 md:gap-0">
         <div className="w-[40%] flex flex-col pl-5 md:pl-0 md:justify-center gap-4">
-          <p className="font-eScript text-[#FDAD20] text-[2rem]">Alchemy</p>
           <div className="flex md:w-[20%] w-[50%] justify-between">
             <a href="tel:+2349072715975">
               <Image src="/Images/phone.svg" alt="logo" height={1} width={30} />
