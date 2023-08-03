@@ -62,7 +62,7 @@ const FAQ = () => {
                 className=" overflow-hidden relative border-[1px] rounded-[5px] border-[#808080] p-2 mx-auto space-y-[1rem]"
             >
                 <div className=" flex justify-between items-center">
-                    <h3 className="font-EuclidCircularA w-[80%] font-bold my-2">What is Pontys?</h3>
+                    <h3 className="font-poppins w-[80%] font-bold my-2">What is BlockFest</h3>
                     <button
                         onClick={() => dispatch({ type: "IconOne" }, revealData(One))}
                         className=" h-5 w-5"
@@ -70,8 +70,8 @@ const FAQ = () => {
                         {state.iconOne ? svgTwo() : svgOne()}
                     </button>
                 </div>
-                <p className="font-spaceGrotesk duration-500 md:translate-y-[-13rem] translate-y-[-33rem] absolute">
-                    Pontys is a full-service agency that specializes in helping individuals and business understand and leverage opportunities in the emerging Web3 economy. Our mission is to empower our clients to take advantage of the opportunities presented by Web3 and be at the forefront of this revolutionary change.
+                <p className="font-poppins duration-500 md:translate-y-[-13rem] translate-y-[-33rem] absolute">
+                    Ever thought of a convention point of builders in the Web3 Ecosystem- Developers, creatives, traders, investors & community builders, Well, BLOCKF3ST AFRICA is it, and More!
                 </p>
             </div>
             <div
