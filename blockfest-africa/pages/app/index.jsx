@@ -10,7 +10,8 @@ const Index = () => {
         <section className=" bg-[#050E2B] h-[100vh] flex flex-col justify-center">
             <div className="h-[56%] flex flex-col justify-evenly">
                 <div className="w-fit mx-auto">
-                    <h1 text-data="BUIDL•BRIDGE•BECOME" className="text-[#fff] wow fadeIn font-poppins font-[700] text-[2rem]">BUIDL•BRIDGE•BECOME</h1>
+                    <h1 text-data="BUIDL•BRIDGE•BECOME" className="text-[#fff] hidden md:block wow fadeIn font-poppins font-[700] text-[2rem]">BUIDL•BRIDGE•BECOME</h1>
+                    <h2 className="text-[#fff] md:hidden wow fadeIn font-poppins font-[700] text-[2rem]">BUIDL •BRIDGE •BECOME</h2>
                 </div>
                 <div className="text-center">
                     <small className="text-[#fff] wow fadeIn font-poppins text-center">October 27th-28th, 2023. Lagos, Nigeria</small>
