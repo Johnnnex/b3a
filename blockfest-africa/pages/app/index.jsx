@@ -21,7 +21,7 @@ const Index = () => {
                 <Timer />
             </div>
         </section>
-        <section className="text-white pt-[2rem] pb-[4rem]">
+        <section id="about" className="text-white pt-[5rem] pb-[4rem]">
             <div className="flex w-[80%] mx-auto justify-between items-center font-poppins">
                 <div className="w-[28%]">
                     <h3 className="font-[600] text-[2rem]">About BLOCKF3ST</h3>
