@@ -13,8 +13,8 @@ const Index = () => {
                     <h1 text-data="BUIDL•BRIDGE•BECOME" className="text-[#fff] hidden md:block wow fadeIn font-poppins font-[700] text-[2rem]">BUIDL•BRIDGE•BECOME</h1>
                     <h2 className="text-[#fff] md:hidden wow fadeIn font-poppins font-[700] text-[2rem]">BUIDL •BRIDGE •BECOME</h2>
                 </div>
-                <div className="text-center">
-                    <small className="text-[#fff] wow fadeIn font-poppins md:text-center">October 27th-28th, 2023. Lagos, Nigeria</small>
+                <div className="md:text-center">
+                    <small className="text-[#fff] wow fadeIn font-poppins">October 27th-28th, 2023. Lagos, Nigeria</small>
                 </div>
                 <div className="md:text-center wow fadeIn font-poppins">
                     <button className=" px-7 py-2 bg-[#1A63E4] text-white rounded-[5px]">Become a Sponsor</button>
