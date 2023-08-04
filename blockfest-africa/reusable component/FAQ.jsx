@@ -8,12 +8,26 @@ const FAQ = () => {
 	const Four = useRef();
 	const Five = useRef();
 	const Six = useRef();
+	const Seven = useRef();
+	const Eight = useRef();
+	const Nine = useRef();
+	const Ten = useRef();
+	const Eleven = useRef();
+	const Twelve = useRef();
+	const Thirteen = useRef();
 	const memberOne = useRef();
 	const memberTwo = useRef();
 	const memberThree = useRef();
 	const memberFour = useRef();
 	const memberFive = useRef();
 	const memberSix = useRef();
+	const memberSeven = useRef();
+	const memberEight = useRef();
+	const memberNine = useRef();
+	const memberTen = useRef();
+	const memberEleven = useRef();
+	const memberTwelve= useRef();
+	const memberThirteen = useRef();
     const reducer = (state, action) => {
 		switch (action.type) {
 			case "IconOne":
@@ -28,8 +42,20 @@ const FAQ = () => {
 				return { ...state, iconFive: !state.iconFive };
 			case "IconSix":
 				return { ...state, iconSix: !state.iconSix };
-			case "Log":
-				return { ...state, isLoggedIn: !state.isLoggedIn };
+			case "IconSeven":
+				return { ...state, iconSeven: !state.iconSeven };
+			case "IconEight":
+				return { ...state, iconEight: !state.iconEight };
+			case "IconNine":
+				return { ...state, iconNine: !state.iconNine };
+			case "IconTen":
+				return { ...state, iconTen: !state.iconTen };
+			case "IconEleven":
+				return { ...state, iconEleven: !state.iconEleven };
+			case "IconTwelve":
+				return { ...state, iconTwelve: !state.iconTwelve };
+			case "IconThirteen":
+				return { ...state, iconThirteen: !state.iconThirteen };
 		}
 	};
 	const [state, dispatch] = useReducer(reducer, {
@@ -39,7 +65,13 @@ const FAQ = () => {
 		iconFour: false,
 		iconFive: false,
 		iconSix: false,
-		isLoggedIn: false,
+		iconSeven: false,
+		iconEight: false,
+		iconNine: false,
+		iconTen: false,
+		iconEleven: false,
+		iconTwelve: false,
+		iconThirteen: false,
 	});
     const revealData = (value) => {
 		value.current.classList.toggle("full-data");
@@ -52,11 +84,11 @@ const FAQ = () => {
 	};
   return (
     <section className=" pt-[7rem]">
-        <h3 className="wow bounceInDown font-poppins text-center text-white text-3xl font-[600] mb-[2rem]">
+        <h3 className="wow fadeInDown font-poppins text-center text-white text-3xl font-[600] mb-[2rem]">
             You've Got <span className="text-[#1A63E4]">Questions?</span> <br />
             <span className='text-[1.2rem]'>Great! Cause We Have Answers!</span>
         </h3>
-        <div className="wow fadeIn w-[90%] md:w-3/5 mx-auto text-white p-[1rem] md:p-[3rem] rounded-[8px] space-y-[2rem]">
+        <div className="wow fadeInUp w-[90%] md:w-3/5 mx-auto text-white p-[1rem] md:p-[3rem] rounded-[8px] space-y-[2rem]">
             <div
                 ref={One}
                 className=" overflow-hidden relative rounded-[5px] p-2 mx-auto space-y-[1rem]"
@@ -121,7 +153,7 @@ const FAQ = () => {
                         {state.iconFour ? svgTwo() : svgOne()}
                     </button>
                 </div>
-                <ul className="list-disc font-poppins duration-500 md:translate-y-[-33rem] translate-y-[-43rem] absolute">
+                <ul className="list-disc list-inside font-poppins duration-500 md:translate-y-[-33rem] translate-y-[-43rem] absolute">
                     <li className="">Provide a gathering of developers, creatives, digital creators</li>
                 </ul>
             </div>
@@ -130,7 +162,7 @@ const FAQ = () => {
                 className=" overflow-hidden relative  rounded-[5px] p-2 mx-auto space-y-[1rem]"
             >
                 <div className=" flex justify-between items-center">
-                    <h3 className="font-poppins w-[80%] font-bold my-2">Who can benefit from Pontys&apos;&nbsp;services?</h3>
+                    <h3 className="font-poppins w-[80%] font-bold my-2">What is BLOCKF3ST Vision? -BRIDGE</h3>
                     <button
                         onClick={() => dispatch({ type: "IconFive" }, revealData(Five))}
                         className=" h-5 w-5"
@@ -139,7 +171,7 @@ const FAQ = () => {
                     </button>
                 </div>
                 <p className="font-poppins duration-500 md:translate-y-[-13rem] translate-y-[-53rem] absolute">
-                    Anyone interested in learning about and leveraging the opportunities presented by Web3 can benefit from Pontys&apos;&nbsp;services. This includes individuals looking to upskill and expand their career options, as well as businesses looking to innovate and stay ahead of the competition.
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint, aliquid ipsa. Consequuntur, reprehenderit sed quae repudiandae labore, maiores aut possimus fugit fugiat reiciendis animi nesciunt debitis officiis atque earum eos.
                 </p>
             </div>
             <div
@@ -147,7 +179,7 @@ const FAQ = () => {
                 className=" overflow-hidden relative  rounded-[5px] p-2 mx-auto space-y-[1rem]"
             >
                 <div className=" flex justify-between items-center">
-                    <h3 className="font-poppins w-[80%] font-bold my-2">How do i get started with Pontys?</h3>
+                    <h3 className="font-poppins w-[80%] font-bold my-2">What is BLOCKF3ST Goal? -BECOME</h3>
                     <button
                         onClick={() => dispatch({ type: "IconSix" }, revealData(Six))}
                         className=" h-5 w-5"
@@ -156,7 +188,126 @@ const FAQ = () => {
                     </button>
                 </div>
                 <p className="font-poppins duration-500 md:translate-y-[-13rem] translate-y-[-23rem] absolute">
-                    To get started with Pontys, you can reach out to us on our social media handles or check through this site. We offer a range of educational resources and services to help you navigate the Web3 ecosystem and acquire the skills and knowledge you need to succeed 
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam, neque temporibus omnis, tempora aut dolore voluptatibus ut, eaque quod numquam unde cum similique earum corporis distinctio fugit voluptatem atque nulla.
+                </p>
+            </div>
+            <div
+                ref={Seven}
+                className=" overflow-hidden relative  rounded-[5px] p-2 mx-auto space-y-[1rem]"
+            >
+                <div className=" flex justify-between items-center">
+                    <h3 className="font-poppins w-[80%] font-bold my-2">Is it virtual or in person event?</h3>
+                    <button
+                        onClick={() => dispatch({ type: "IconSeven" }, revealData(Seven))}
+                        className=" h-5 w-5"
+                    >
+                        {state.iconSeven ? svgTwo() : svgOne()}
+                    </button>
+                </div>
+                <p className="font-poppins duration-500 md:translate-y-[-13rem] translate-y-[-23rem] absolute">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam, neque temporibus omnis, tempora aut dolore voluptatibus ut, eaque quod numquam unde cum similique earum corporis distinctio fugit voluptatem atque nulla.
+                </p>
+            </div>
+            <div
+                ref={Eight}
+                className=" overflow-hidden relative  rounded-[5px] p-2 mx-auto space-y-[1rem]"
+            >
+                <div className=" flex justify-between items-center">
+                    <h3 className="font-poppins w-[80%] font-bold my-2">Is it a paid event?</h3>
+                    <button
+                        onClick={() => dispatch({ type: "IconEight" }, revealData(Eight))}
+                        className=" h-5 w-5"
+                    >
+                        {state.iconEight ? svgTwo() : svgOne()}
+                    </button>
+                </div>
+                <p className="font-poppins duration-500 md:translate-y-[-13rem] translate-y-[-23rem] absolute">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam, neque temporibus omnis, tempora aut dolore voluptatibus ut, eaque quod numquam unde cum similique earum corporis distinctio fugit voluptatem atque nulla.
+                </p>
+            </div>
+            <div
+                ref={Nine}
+                className=" overflow-hidden relative  rounded-[5px] p-2 mx-auto space-y-[1rem]"
+            >
+                <div className=" flex justify-between items-center">
+                    <h3 className="font-poppins w-[80%] font-bold my-2">Where would BlockFest 2023 hold?</h3>
+                    <button
+                        onClick={() => dispatch({ type: "IconNine" }, revealData(Nine))}
+                        className=" h-5 w-5"
+                    >
+                        {state.iconNine ? svgTwo() : svgOne()}
+                    </button>
+                </div>
+                <p className="font-poppins duration-500 md:translate-y-[-13rem] translate-y-[-23rem] absolute">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam, neque temporibus omnis, tempora aut dolore voluptatibus ut, eaque quod numquam unde cum similique earum corporis distinctio fugit voluptatem atque nulla.
+                </p>
+            </div>
+            <div
+                ref={Ten}
+                className=" overflow-hidden relative  rounded-[5px] p-2 mx-auto space-y-[1rem]"
+            >
+                <div className=" flex justify-between items-center">
+                    <h3 className="font-poppins w-[80%] font-bold my-2">How many days will it hold for?</h3>
+                    <button
+                        onClick={() => dispatch({ type: "IconTen" }, revealData(Ten))}
+                        className=" h-5 w-5"
+                    >
+                        {state.iconTen ? svgTwo() : svgOne()}
+                    </button>
+                </div>
+                <p className="font-poppins duration-500 md:translate-y-[-13rem] translate-y-[-23rem] absolute">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam, neque temporibus omnis, tempora aut dolore voluptatibus ut, eaque quod numquam unde cum similique earum corporis distinctio fugit voluptatem atque nulla.
+                </p>
+            </div>
+            <div
+                ref={Eleven}
+                className=" overflow-hidden relative  rounded-[5px] p-2 mx-auto space-y-[1rem]"
+            >
+                <div className=" flex justify-between items-center">
+                    <h3 className="font-poppins w-[80%] font-bold my-2">How do i become a volunteer?</h3>
+                    <button
+                        onClick={() => dispatch({ type: "IconEleven" }, revealData(Eleven))}
+                        className=" h-5 w-5"
+                    >
+                        {state.iconEleven ? svgTwo() : svgOne()}
+                    </button>
+                </div>
+                <p className="font-poppins duration-500 md:translate-y-[-13rem] translate-y-[-23rem] absolute">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam, neque temporibus omnis, tempora aut dolore voluptatibus ut, eaque quod numquam unde cum similique earum corporis distinctio fugit voluptatem atque nulla.
+                </p>
+            </div>
+            <div
+                ref={Twelve}
+                className=" overflow-hidden relative  rounded-[5px] p-2 mx-auto space-y-[1rem]"
+            >
+                <div className=" flex justify-between items-center">
+                    <h3 className="font-poppins w-[80%] font-bold my-2">What are the channels for communication and inquiries?</h3>
+                    <button
+                        onClick={() => dispatch({ type: "IconTwelve" }, revealData(Twelve))}
+                        className=" h-5 w-5"
+                    >
+                        {state.iconTwelve ? svgTwo() : svgOne()}
+                    </button>
+                </div>
+                <p className="font-poppins duration-500 md:translate-y-[-13rem] translate-y-[-23rem] absolute">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam, neque temporibus omnis, tempora aut dolore voluptatibus ut, eaque quod numquam unde cum similique earum corporis distinctio fugit voluptatem atque nulla.
+                </p>
+            </div>
+            <div
+                ref={Thirteen}
+                className=" overflow-hidden relative  rounded-[5px] p-2 mx-auto space-y-[1rem]"
+            >
+                <div className=" flex justify-between items-center">
+                    <h3 className="font-poppins w-[80%] font-bold my-2">What happens post event?</h3>
+                    <button
+                        onClick={() => dispatch({ type: "IconThirteen" }, revealData(Thirteen))}
+                        className=" h-5 w-5"
+                    >
+                        {state.iconThirteen ? svgTwo() : svgOne()}
+                    </button>
+                </div>
+                <p className="font-poppins duration-500 md:translate-y-[-13rem] translate-y-[-23rem] absolute">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam, neque temporibus omnis, tempora aut dolore voluptatibus ut, eaque quod numquam unde cum similique earum corporis distinctio fugit voluptatem atque nulla.
                 </p>
             </div>
         </div>
