@@ -44,7 +44,7 @@ const Index = () => {
                 </div>
             </div>
         </section>
-        <section className="px-4 md:px-0 py-[3.5rem]" id="speakers">
+        {/* <section className="px-4 md:px-0 py-[3.5rem]" id="speakers">
             <h2 className="font-poppins wow fadeIn text-center font-[600] text-[2rem] mb-[4rem] text-white">Meet Our Speakers</h2>
             <div className="flex flex-wrap md:w-[80%] mx-auto">
                 <div className="w-[20rem] p-2 wow fadeIn mx-auto mb-7">
@@ -69,7 +69,7 @@ const Index = () => {
                     <small className="font-poppins text-white">Developer Advocate, Axelar</small>
                 </div>
             </div>
-        </section>
+        </section> */}
         <FAQ />
     </>
   )

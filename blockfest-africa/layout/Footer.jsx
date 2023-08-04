@@ -54,19 +54,22 @@ const Footer = () => {
             </a>
           </div>
         </div>
-        <nav className="w-[50%] pl-5 md:pl-0">
+        <nav className="w-[70%] pl-5 md:pl-0">
           <ul className="flex flex-col md:flex-row justify-evenly font-poppins text-white">
             <Link href="#">
-              <li className={home}>Home</li>
+              <li className={home}>About</li>
             </Link>
             <Link href="#about">
-              <li className={about}>About</li>
+              <li className={about}>Speakers</li>
             </Link>
             <Link href="#speakers">
-              <li className={speaker}>Speakers</li>
+              <li className={speaker}>Patners</li>
             </Link>
             <Link href="#testimonies">
-              <li className={testimony}>Testimonies</li>
+              <li className={testimony}>Event Schedule</li>
+            </Link>
+            <Link href="#testimonies">
+              <li className={testimony}>FAQ</li>
             </Link>
           </ul>
         </nav>
