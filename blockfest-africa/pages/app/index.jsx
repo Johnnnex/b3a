@@ -17,7 +17,9 @@ const Index = () => {
                     <small className="text-[#fff] text-[1rem] wow fadeIn font-poppins">October 27th-28th, 2023. Lagos, Nigeria</small>
                 </div>
                 <div className="md:text-center wow fadeIn font-poppins">
-                    <button className=" px-7 py-2 bg-[#1A63E4] text-white rounded-[5px]">Become a Sponsor</button>
+                    <a href="https://bit.ly/Sponsor-Blockfest-2023" target="_blank" rel="noopener noreferrer">
+                        <button className=" px-7 py-2 bg-[#1A63E4] text-white rounded-[5px]">Become a Sponsor</button>
+                    </a>
                 </div>
                 <Timer />
             </div>
