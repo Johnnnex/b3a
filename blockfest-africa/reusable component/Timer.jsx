@@ -32,7 +32,7 @@ const Timer = () => {
         }
       }, [countDown])
   return (
-    <section className="text-[#ffffff99] wow fadeIn mt-[2rem] md:w-[60%] mx-[1%] w-[90%] md:mx-[20%] font-poppins py-[1.5rem]">
+    <section className="text-[#ffffff99] wow fadeInDown mt-[2rem] md:w-[60%] mx-[1%] w-[90%] md:mx-[20%] font-poppins py-[1.5rem]">
         <div className="flex justify-evenly items-center md:w-[70%] mx-auto">
         <p className="font-[700]">
             {dy} <br />

@@ -57,12 +57,19 @@ const Footer = () => {
     <footer className="w-full py-8">
       <div className="flex md:items-center md:pl-8 flex-col md:flex-row gap-9 md:gap-0">
         <div className="w-[40%] flex flex-col pl-5 md:pl-0 md:justify-center gap-4">
-          <div className="flex md:w-[20%] w-[50%] justify-between">
-            <a href="tel:+2349072715975">
-              <Image src="/Images/phone.svg" alt="logo" height={1} width={30} />
+          <Image src="/Images/logo.svg" alt="logo" height={1} width={100} />
+          <div className="flex md:w-[45%] items-center w-[50%] justify-between">
+            <a href="#">
+              <Image src="/Images/ig.svg" alt="logo" height={1} width={20} />
             </a>
-            <a href="https://www.linkedin.com/in/umeh-chinonye-maryjane" target="_blank" rel="noopener noreferrer">
-              <Image src="/Images/linkedin.svg" alt="logo" height={1} width={30} />
+            <a href="#" target="_blank" rel="noopener noreferrer">
+              <Image src="/Images/twitter.svg" alt="logo" height={1} width={20} />
+            </a>
+            <a href="#" target="_blank" rel="noopener noreferrer">
+              <Image src="/Images/linkedin.svg" alt="logo" height={1} width={20} />
+            </a>
+            <a href="#" target="_blank" rel="noopener noreferrer">
+              <Image src="/Images/youtube.svg" alt="logo" height={1} width={25} />
             </a>
           </div>
         </div>
