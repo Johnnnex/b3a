@@ -12,6 +12,7 @@ const Header = () => {
   const [about, setAbout] = useState()
   const [speaker, setSpeaker] = useState()
   const [schedule, setSchedule] = useState()
+  const [faq, setFaq] = useState()
 
   const setStates = useCallback(() => {
     if(router.asPath == "/#about") {
@@ -19,24 +20,35 @@ const Header = () => {
       setPatner("")
       setSpeaker("")
       setSchedule("")
+      setFaq("")
     }
     else if (router.asPath == "/#speakers") {
       setSpeaker("active")
       setAbout("")
       setPatner("")
       setSchedule("")
+      setFaq("")
     }
     else if (router.asPath == "/#patners") {
       setPatner("active")
       setAbout("")
       setSpeaker("")
       setSchedule("")
+      setFaq("")
     }
     else if (router.asPath == "/#schedule") {
+      setSchedule("active")
       setAbout("")
       setPatner("")
       setSpeaker("")
-      setSchedule("active")
+      setFaq("")
+    }
+    else if (router.asPath == "/#FAQ") {
+      setFaq("active")
+      setAbout("")
+      setPatner("")
+      setSpeaker("")
+      setSchedule("")
     }
   }, [router.asPath])
 
@@ -59,27 +71,27 @@ const Header = () => {
         <nav className="w-[80%] mainNav" ref={navRef}>
           <div className="flex items-center justify-between">
             <ul className="flex w-[60%] flex-col md:flex-row text-center md:text-left justify-between font-poppins text-white">
-              <li className={`${home} nav-list py-1 px-3`}>
+              <li className={`${about} nav-list py-1 px-3`}>
                 <Link href="#about">
                   About
                 </Link>
               </li>
-              <li className={`${about} nav-list py-1 px-3`}>
+              <li className={`${speaker} nav-list py-1 px-3`}>
                 <Link href="#speakers">
                   Speakers
                 </Link>
               </li>
-              <li className={`${speaker} nav-list py-1 px-3`}>
+              <li className={`${partner} nav-list py-1 px-3`}>
                 <Link href="#patners">
                   Patners
                 </Link>
               </li>
-              <li className={`${testimony} nav-list py-1 px-3`}>
+              <li className={`${schedule} nav-list py-1 px-3`}>
                 <Link href="#schedule">
                   Event Schedule
                 </Link>
               </li>
-              <li className={`${testimony} nav-list py-1 px-3`}>
+              <li className={`${faq} nav-list py-1 px-3`}>
                 <Link href="#FAQ">
                   FAQ
                 </Link>

@@ -8,6 +8,7 @@ const Footer = () => {
   const [about, setAbout] = useState()
   const [speaker, setSpeaker] = useState()
   const [schedule, setSchedule] = useState()
+  const [faq, setFaq] = useState()
   const router = useRouter()
 
 
@@ -17,21 +18,32 @@ const Footer = () => {
       setPartner("")
       setSpeaker("")
       setSchedule("")
+      setFaq("")
     }
     else if (router.asPath == "/#speakers") {
       setSpeaker("active")
       setAbout("")
       setPartner("")
       setSchedule("")
+      setFaq("")
     }
     else if (router.asPath == "/#partners") {
-      setPartner("active")
+      setPartner("")
       setSpeaker("")
       setAbout("")
       setSchedule("")
+      setFaq("")
     }
     else if (router.asPath == "/#schedule") {
       setSchedule("active")
+      setPartner("")
+      setAbout("")
+      setSpeaker("")
+      setFaq("")
+    }
+    else if (router.asPath == "/#FAQ") {
+      setFaq("active")
+      setSchedule("")
       setPartner("")
       setAbout("")
       setSpeaker("")
@@ -57,19 +69,19 @@ const Footer = () => {
         <nav className="w-[70%] pl-5 md:pl-0">
           <ul className="flex flex-col md:flex-row justify-evenly font-poppins text-white">
             <Link href="#about">
-              <li className={home}>About</li>
+              <li className={about}>About</li>
             </Link>
             <Link href="#speakers">
-              <li className={about}>Speakers</li>
+              <li className={speaker}>Speakers</li>
             </Link>
             <Link href="#patners">
-              <li className={speaker}>Patners</li>
+              <li className={partner}>Patners</li>
             </Link>
             <Link href="#schedule">
-              <li className={testimony}>Event Schedule</li>
+              <li className={schedule}>Event Schedule</li>
             </Link>
             <Link href="#FAQ">
-              <li className={testimony}>FAQ</li>
+              <li className={faq}>FAQ</li>
             </Link>
           </ul>
         </nav>
