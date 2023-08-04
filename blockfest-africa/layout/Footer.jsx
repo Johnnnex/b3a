@@ -61,16 +61,16 @@ const Footer = () => {
             <Image src="/Images/logo.svg" alt="logo" height={1} width={100} />
           </Link>
           <div className="flex md:w-[45%] items-center w-[50%] justify-between">
-            <a href="#">
+            <a href="https://instagram.com/blockfestafrica?igshid=MzRlODBiNWFlZA==">
               <Image src="/Images/ig.svg" alt="logo" height={1} width={20} />
             </a>
-            <a href="#" target="_blank" rel="noopener noreferrer">
+            <a href="https://twitter.com/blockfestafrica?t=HrZZPme5kS-ml1nplc6NeQ&s=08" target="_blank" rel="noopener noreferrer">
               <Image src="/Images/twitter.svg" alt="logo" height={1} width={20} />
             </a>
-            <a href="#" target="_blank" rel="noopener noreferrer">
+            <a href="https://www.linkedin.com/company/blockfest-africa/" target="_blank" rel="noopener noreferrer">
               <Image src="/Images/linkedin.svg" alt="logo" height={1} width={20} />
             </a>
-            <a href="#" target="_blank" rel="noopener noreferrer">
+            <a href="https://www.youtube.com/@BLOCKFESTAFRICA" target="_blank" rel="noopener noreferrer">
               <Image src="/Images/youtube.svg" alt="logo" height={1} width={25} />
             </a>
           </div>

@@ -6,7 +6,7 @@ const Timer = () => {
     const [min, setMin] = useState("00")
     const [sec, setSec] = useState("00")
     const countDown = useCallback(() => {
-        const eventTime = new Date('October 21, 2023 18:00:00').getTime()
+        const eventTime = new Date('October 27, 2023 09:00:00').getTime()
         const currentTime = new Date().getTime()
         const gap = eventTime - currentTime
         const second = 1000
@@ -33,7 +33,7 @@ const Timer = () => {
       }, [countDown])
   return (
     <section className="text-[#ffffff99] wow fadeInDown mt-[2rem] md:w-[60%] mx-auto w-[100%] md:mx-[20%] font-poppins py-[1.5rem]">
-        <div className="flex justify-evenly items-center md:w-[70%] mx-auto">
+        <div className="flex justify-evenly text-[1rem] items-center md:w-[70%] mx-auto">
         <p className="font-[700] text-center md:text-left">
             {dy} <br />
             <small className="font-[100]">Day(s)</small>
