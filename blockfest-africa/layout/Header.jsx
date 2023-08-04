@@ -8,35 +8,35 @@ const Header = () => {
   const router = useRouter()
   const navRef = useRef();
 	const burgerRef = useRef();
-  const [home, setHome] = useState()
+  const [partner, setPatner] = useState()
   const [about, setAbout] = useState()
   const [speaker, setSpeaker] = useState()
-  const [testimony, setTestimony] = useState()
+  const [schedule, setSchedule] = useState()
 
   const setStates = useCallback(() => {
-    if(router.asPath == "/" || router.asPath == "/#") {
-      setHome("active")
-      setAbout("")
-      setSpeaker("")
-      setTestimony("")
-    }
-    else if (router.asPath == "/#about") {
+    if(router.asPath == "/#about") {
       setAbout("active")
-      setHome("")
+      setPatner("")
       setSpeaker("")
-      setTestimony("")
+      setSchedule("")
     }
     else if (router.asPath == "/#speakers") {
-      setAbout("")
-      setHome("")
       setSpeaker("active")
-      setTestimony("")
-    }
-    else if (router.asPath == "/#testimonies") {
       setAbout("")
-      setHome("")
+      setPatner("")
+      setSchedule("")
+    }
+    else if (router.asPath == "/#patners") {
+      setPatner("active")
+      setAbout("")
       setSpeaker("")
-      setTestimony("active")
+      setSchedule("")
+    }
+    else if (router.asPath == "/#schedule") {
+      setAbout("")
+      setPatner("")
+      setSpeaker("")
+      setSchedule("active")
     }
   }, [router.asPath])
 
@@ -60,27 +60,27 @@ const Header = () => {
           <div className="flex items-center justify-between">
             <ul className="flex w-[60%] flex-col md:flex-row text-center md:text-left justify-between font-poppins text-white">
               <li className={`${home} nav-list py-1 px-3`}>
-                <Link href="#">
+                <Link href="#about">
                   About
                 </Link>
               </li>
               <li className={`${about} nav-list py-1 px-3`}>
-                <Link href="#about">
+                <Link href="#speakers">
                   Speakers
                 </Link>
               </li>
               <li className={`${speaker} nav-list py-1 px-3`}>
-                <Link href="#speakers">
+                <Link href="#patners">
                   Patners
                 </Link>
               </li>
               <li className={`${testimony} nav-list py-1 px-3`}>
-                <Link href="#testimonies">
+                <Link href="#schedule">
                   Event Schedule
                 </Link>
               </li>
               <li className={`${testimony} nav-list py-1 px-3`}>
-                <Link href="#testimonies">
+                <Link href="#FAQ">
                   FAQ
                 </Link>
               </li>

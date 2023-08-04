@@ -4,37 +4,37 @@ import Image from 'next/image'
 import Link from 'next/link';
 
 const Footer = () => {
-  const [home, setHome] = useState()
+  const [partner, setPartner] = useState()
   const [about, setAbout] = useState()
   const [speaker, setSpeaker] = useState()
-  const [testimony, setTestimony] = useState()
+  const [schedule, setSchedule] = useState()
   const router = useRouter()
 
 
   const setStates = useCallback(() => {
-    if(router.asPath == "/" || router.asPath == "/#") {
-      setHome("active")
-      setAbout("")
-      setSpeaker("")
-      setTestimony("")
-    }
-    else if (router.asPath == "/#about") {
+    if(router.asPath == "/#about") {
       setAbout("active")
-      setHome("")
+      setPartner("")
       setSpeaker("")
-      setTestimony("")
+      setSchedule("")
     }
     else if (router.asPath == "/#speakers") {
-      setAbout("")
-      setHome("")
       setSpeaker("active")
-      setTestimony("")
-    }
-    else if (router.asPath == "/#testimonies") {
       setAbout("")
-      setHome("")
+      setPartner("")
+      setSchedule("")
+    }
+    else if (router.asPath == "/#partners") {
+      setPartner("active")
       setSpeaker("")
-      setTestimony("active")
+      setAbout("")
+      setSchedule("")
+    }
+    else if (router.asPath == "/#schedule") {
+      setSchedule("active")
+      setPartner("")
+      setAbout("")
+      setSpeaker("")
     }
   }, [router.asPath])
 
@@ -56,19 +56,19 @@ const Footer = () => {
         </div>
         <nav className="w-[70%] pl-5 md:pl-0">
           <ul className="flex flex-col md:flex-row justify-evenly font-poppins text-white">
-            <Link href="#">
+            <Link href="#about">
               <li className={home}>About</li>
             </Link>
-            <Link href="#about">
+            <Link href="#speakers">
               <li className={about}>Speakers</li>
             </Link>
-            <Link href="#speakers">
+            <Link href="#patners">
               <li className={speaker}>Patners</li>
             </Link>
-            <Link href="#testimonies">
+            <Link href="#schedule">
               <li className={testimony}>Event Schedule</li>
             </Link>
-            <Link href="#testimonies">
+            <Link href="#FAQ">
               <li className={testimony}>FAQ</li>
             </Link>
           </ul>

@@ -83,7 +83,7 @@ const FAQ = () => {
 		return <Image src="/Images/minus.svg" height={31} width={31} alt="minus" />;
 	};
   return (
-    <section className=" pt-[7rem]">
+    <section id="FAQ" className=" pt-[7rem]">
         <h3 className="wow fadeInDown font-poppins text-center text-white text-3xl font-[600] mb-[2rem]">
             You've Got <span className="text-[#1A63E4]">Questions?</span> <br />
             <span className='text-[1.2rem]'>Great! Cause We Have Answers!</span>
