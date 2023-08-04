@@ -40,7 +40,9 @@ const Index = () => {
                     This is the SUPER BOWL of WEB3! <br />
                     </p>
                     <div className="font-poppins">
-                        <button className="wow fadeIn px-7 py-2 bg-[#1A63E4] text-white rounded-[5px]">Partner wih us</button>
+                        <a href="https://bit.ly/Sponsor-Blockfest-2023" target="_blank" rel="noopener noreferrer">
+                            <button className="wow fadeIn px-7 py-2 bg-[#1A63E4] text-white rounded-[5px]">Partner wih us</button>
+                        </a>
                 </div>
                 </div>
             </div>
