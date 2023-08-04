@@ -102,7 +102,7 @@ const FAQ = () => {
                         {state.iconOne ? svgTwo() : svgOne()}
                     </button>
                 </div>
-                <p className="font-poppins duration-500 md:translate-y-[-13rem] translate-y-[-33rem] absolute">
+                <p className="font-poppins duration-500 md:translate-y-[-13rem] translate-y-[-43rem] absolute">
                     Ever thought of a convention point of builders in the Web3 Ecosystem- Developers, creatives, traders, investors & community builders, Well, BLOCKF3ST AFRICA is it, and More!
                 </p>
             </div>
@@ -119,8 +119,8 @@ const FAQ = () => {
                         {state.iconTwo ? svgTwo() : svgOne()}
                     </button>
                 </div>
-                <p className="font-poppins duration-500 md:translate-y-[-33rem] translate-y-[-33rem] absolute">
-                    some lorem texts here
+                <p className="font-poppins duration-500 md:translate-y-[-33rem] translate-y-[-43rem] absolute">
+                    Seeing most events either cater to just the Finance, Tech, Fintech, developers, creatives or traders only community, BLOCKF3ST is on a mission to bring together the individuals that make the dream team of any infrastructure foster unity, mentoring, scholarships, opportunities in the cooperate world and virgin ground for investors and employers.
                 </p>
             </div>
             <div
@@ -136,9 +136,17 @@ const FAQ = () => {
                         {state.iconThree ? svgTwo() : svgOne()}
                     </button>
                 </div>
-                <p className="font-poppins duration-500 md:translate-y-[-13rem] translate-y-[-43rem] absolute">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis eaque, omnis dolorum eligendi sed debitis nostrum nam illo, beatae distinctio esse, repellendus cumque quidem. Corrupti illum aspernatur culpa sapiente porro!
-                </p>
+                <ul className="font-poppins list-disc list-inside duration-500 md:translate-y-[-29rem] translate-y-[-83rem] absolute">
+                    <li>Blockchain technology as a protagonist to finance, healthcare, supply chain, politics and more industries.</li>
+                    <li>Learn and discuss the latest about APIs and Frameworks regarding Web3 protocols through hands-on workshops and talk sessions with professionals.</li>
+                    <li>DeFi; future of decentralized finance applications and real life utilization </li>
+                    <li>NFTs and the evolving landscape of digital assets and collectibles.</li>
+                    <li>Web3 protocols, interoperability, and the evolution of the internet.</li>
+                    <li>Privacy, security, and trust in Web3 applications.</li>
+                    <li>Web3 trends and innovations for Digital creators </li>
+                    <li>Transitioning from Web2 to Web3 as a tech and non IT professional </li>
+                    <li>Building a career in Web3 and fireside chats on monetization of web3 skills for the end users </li>
+                </ul>
             </div>
             <div
                 ref={Four}
@@ -154,7 +162,9 @@ const FAQ = () => {
                     </button>
                 </div>
                 <ul className="list-disc list-inside font-poppins duration-500 md:translate-y-[-33rem] translate-y-[-43rem] absolute">
-                    <li className="">Provide a gathering of developers, creatives, digital creators</li>
+                    <li className="">Provide a gathering of developers, creatives, digital creators, and traders beyond an annual event- a community </li>
+                    <li>Groom individuals who can advance the IT and non IT sectors of the crypto, blockchain, fintech, ecosystems.</li>
+                    <li>We foster enlightenment, networking, and support for entry-level talent, integrating and positioning them into right communities, and connecting them with corporate partners.</li>
                 </ul>
             </div>
             <div
@@ -170,9 +180,10 @@ const FAQ = () => {
                         {state.iconFive ? svgTwo() : svgOne()}
                     </button>
                 </div>
-                <p className="font-poppins duration-500 md:translate-y-[-13rem] translate-y-[-53rem] absolute">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint, aliquid ipsa. Consequuntur, reprehenderit sed quae repudiandae labore, maiores aut possimus fugit fugiat reiciendis animi nesciunt debitis officiis atque earum eos.
-                </p>
+                <ul className="font-poppins list-disc list-inside duration-500 md:translate-y-[-13rem] translate-y-[-43rem] absolute">
+                    <li>Be the premier platform for Web3 enthusiasts, fostering collaboration and innovation. </li>
+                    <li>Our vision is a strong, all-inclusive community of African Youths breaking into the Global web3 ecosystem.</li>
+                </ul>
             </div>
             <div
                 ref={Six}
@@ -187,8 +198,8 @@ const FAQ = () => {
                         {state.iconSix ? svgTwo() : svgOne()}
                     </button>
                 </div>
-                <p className="font-poppins duration-500 md:translate-y-[-13rem] translate-y-[-23rem] absolute">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam, neque temporibus omnis, tempora aut dolore voluptatibus ut, eaque quod numquam unde cum similique earum corporis distinctio fugit voluptatem atque nulla.
+                <p className="font-poppins duration-500 md:translate-y-[-13rem] translate-y-[-33rem] absolute">
+                    Evolve the economic, financial and professional lives of Young African youths harnessing everything the Blockchain Tech has to offer.
                 </p>
             </div>
             <div
@@ -204,8 +215,8 @@ const FAQ = () => {
                         {state.iconSeven ? svgTwo() : svgOne()}
                     </button>
                 </div>
-                <p className="font-poppins duration-500 md:translate-y-[-13rem] translate-y-[-23rem] absolute">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam, neque temporibus omnis, tempora aut dolore voluptatibus ut, eaque quod numquam unde cum similique earum corporis distinctio fugit voluptatem atque nulla.
+                <p className="font-poppins duration-500 md:translate-y-[-13rem] translate-y-[-33rem] absolute">
+                    Best believe you’d be getting the best of both experiences as this is an hybrid event. Kindly make sure to RSVP/register when the link is out, so we can make due preparation for all our attendees.
                 </p>
             </div>
             <div
@@ -222,7 +233,7 @@ const FAQ = () => {
                     </button>
                 </div>
                 <p className="font-poppins duration-500 md:translate-y-[-13rem] translate-y-[-23rem] absolute">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam, neque temporibus omnis, tempora aut dolore voluptatibus ut, eaque quod numquam unde cum similique earum corporis distinctio fugit voluptatem atque nulla.
+                    No. For Experts and Newbies alike, this event is absolutely FREE!
                 </p>
             </div>
             <div
@@ -239,7 +250,7 @@ const FAQ = () => {
                     </button>
                 </div>
                 <p className="font-poppins duration-500 md:translate-y-[-13rem] translate-y-[-23rem] absolute">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam, neque temporibus omnis, tempora aut dolore voluptatibus ut, eaque quod numquam unde cum similique earum corporis distinctio fugit voluptatem atque nulla.
+                    Lagos Nigeria, location is TBD.
                 </p>
             </div>
             <div
@@ -256,7 +267,7 @@ const FAQ = () => {
                     </button>
                 </div>
                 <p className="font-poppins duration-500 md:translate-y-[-13rem] translate-y-[-23rem] absolute">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam, neque temporibus omnis, tempora aut dolore voluptatibus ut, eaque quod numquam unde cum similique earum corporis distinctio fugit voluptatem atque nulla.
+                    2 days
                 </p>
             </div>
             <div
@@ -273,7 +284,7 @@ const FAQ = () => {
                     </button>
                 </div>
                 <p className="font-poppins duration-500 md:translate-y-[-13rem] translate-y-[-23rem] absolute">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam, neque temporibus omnis, tempora aut dolore voluptatibus ut, eaque quod numquam unde cum similique earum corporis distinctio fugit voluptatem atque nulla.
+                    Application will be out soon. Stay updated on our socials, so as not to miss out on it
                 </p>
             </div>
             <div
@@ -289,8 +300,10 @@ const FAQ = () => {
                         {state.iconTwelve ? svgTwo() : svgOne()}
                     </button>
                 </div>
-                <p className="font-poppins duration-500 md:translate-y-[-13rem] translate-y-[-25rem] absolute">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam, neque temporibus omnis, tempora aut dolore voluptatibus ut, eaque quod numquam unde cum similique earum corporis distinctio fugit voluptatem atque nulla.
+                <p className="font-poppins duration-500 md:translate-y-[-13rem] translate-y-[-35rem] absolute">
+                    Stay in the know of everything you need to know about Blockf3st through our Twitter, Instagram, YouTube and LinkedIn platforms! <br />
+
+                    For enquires, reach us at <a className=" text-[#1A63E4]" href="mailto:contact@blockfestafrica.com">Mail</a>
                 </p>
             </div>
             <div
@@ -307,7 +320,8 @@ const FAQ = () => {
                     </button>
                 </div>
                 <p className="font-poppins duration-500 md:translate-y-[-13rem] translate-y-[-23rem] absolute">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam, neque temporibus omnis, tempora aut dolore voluptatibus ut, eaque quod numquam unde cum similique earum corporis distinctio fugit voluptatem atque nulla.
+                    We understand onboarding into Web3, sensitization and adequate education doesn’t just occur in a ‘2 day event’ , hence BLOCKF3ST has a lot to offer every budding tech and Web3 enthusiast, <br />
+                    Watch out for our 2024 roadmap!
                 </p>
             </div>
         </div>

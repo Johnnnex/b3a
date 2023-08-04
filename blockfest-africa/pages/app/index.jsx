@@ -22,7 +22,7 @@ const Index = () => {
                 <Timer />
             </div>
         </section>
-        <section id="about" className="px-3 md:px-0 text-white pt-[5rem] pb-[4rem]">
+        <section id="about" className="px-3 md:px-0 text-white md:pt-[5rem] pb-[4rem]">
             <div className="flex flex-col gap-5 md:gap-0 md:flex-row md:w-[80%] mx-auto md:justify-between md:items-center font-poppins">
                 <div className="md:w-[28%]">
                     <h3 className="font-[600] wow fadeIn text-[2rem]">About BLOCKF3ST</h3>

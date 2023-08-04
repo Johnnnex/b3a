@@ -100,7 +100,7 @@ const Header = () => {
               </li>
             </ul>
             <div className="md:w-[20%] font-poppins">
-              <button className=" px-7 py-2 bg-[#1BBE9F] rounded-[5px]">Register now</button>
+              <button className=" px-7 py-2 bg-[#1BBE9F] text-white rounded-[5px]">Register now</button>
             </div>
           </div>
         </nav>
