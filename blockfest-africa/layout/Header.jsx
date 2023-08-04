@@ -64,8 +64,8 @@ const Header = () => {
   }, [setStates])
   return (
     <header ref={header} className='bg-[#1a63e41a] header-nav fixed w-full py-3 z-[3]'>
-      <div className="flex px-7 justify-between items-center">
-        <div className="w-[15%]">
+      <div className="flex md:px-7 px-2 justify-between items-center">
+        <div className="md:w-[15%] w-[50%]">
           <Image src="/Images/logo.svg" alt="logo" height={1} width={130} />
         </div>
         <nav className="w-[80%] mainNav" ref={navRef}>

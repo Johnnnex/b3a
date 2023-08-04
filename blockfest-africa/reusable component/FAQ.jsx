@@ -289,7 +289,7 @@ const FAQ = () => {
                         {state.iconTwelve ? svgTwo() : svgOne()}
                     </button>
                 </div>
-                <p className="font-poppins duration-500 md:translate-y-[-13rem] translate-y-[-23rem] absolute">
+                <p className="font-poppins duration-500 md:translate-y-[-13rem] translate-y-[-25rem] absolute">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam, neque temporibus omnis, tempora aut dolore voluptatibus ut, eaque quod numquam unde cum similique earum corporis distinctio fugit voluptatem atque nulla.
                 </p>
             </div>

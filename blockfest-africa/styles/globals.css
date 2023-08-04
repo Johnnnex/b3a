@@ -125,7 +125,7 @@ h1::before {
       justify-content: center;
       align-items: center;
       transition: all .5s;
-      background-color: #7C0202A8;
+      background-color: #1a63e495;
   }
   li {
       margin-bottom: 2rem;
@@ -136,7 +136,6 @@ h1::before {
   .header-sticky {
       background-color: transparent !important;
       transition: .5s;
-      padding-block: 1rem;
   }
   .header-nav {
     background: transparent !important;

@@ -7,27 +7,27 @@ import FAQ from '@/reusable component/FAQ'
 const Index = () => {
   return (
     <>
-        <section className=" bg-[#050E2B] h-[100vh] flex flex-col justify-center">
+        <section className="px-3 md:px-0 bg-[#050E2B] h-[100vh] flex flex-col justify-center">
             <div className="h-[56%] flex flex-col justify-evenly">
                 <div className="w-fit mx-auto">
                     <h1 text-data="BUIDL•BRIDGE•BECOME" className="text-[#fff] hidden md:block wow fadeIn font-poppins font-[700] text-[2rem]">BUIDL•BRIDGE•BECOME</h1>
                     <h2 className="text-[#fff] md:hidden wow fadeIn font-poppins font-[700] text-[2rem]">BUIDL •BRIDGE •BECOME</h2>
                 </div>
                 <div className="text-center">
-                    <small className="text-[#fff] wow fadeIn font-poppins text-center">October 27th-28th, 2023. Lagos, Nigeria</small>
+                    <small className="text-[#fff] wow fadeIn font-poppins md:text-center">October 27th-28th, 2023. Lagos, Nigeria</small>
                 </div>
-                <div className="text-center wow fadeIn font-poppins">
+                <div className="md:text-center wow fadeIn font-poppins">
                     <button className=" px-7 py-2 bg-[#1A63E4] text-white rounded-[5px]">Become a Sponsor</button>
                 </div>
                 <Timer />
             </div>
         </section>
-        <section id="about" className="text-white pt-[5rem] pb-[4rem]">
-            <div className="flex w-[80%] mx-auto justify-between items-center font-poppins">
-                <div className="w-[28%]">
+        <section id="about" className="px-3 md:px-0 text-white pt-[5rem] pb-[4rem]">
+            <div className="flex flex-col gap-5 md:gap-0 md:flex-row md:w-[80%] mx-auto md:justify-between md:items-center font-poppins">
+                <div className="md:w-[28%]">
                     <h3 className="font-[600] wow fadeIn text-[2rem]">About BLOCKF3ST</h3>
                 </div>
-                <div className="w-[60%] space-y-5">
+                <div className="md:w-[60%] space-y-5">
                     <p className="wow fadeInUp">
                     BLOCKF3ST is an annual developers, creatives, digital creators, traders festival that caters to the Web3 community. <br /><br />
 
