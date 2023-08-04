@@ -138,4 +138,7 @@ h1::before {
       transition: .5s;
       padding-block: 1rem;
   }
+  .header-nav {
+    background: transparent !important;
+  }
 }
