@@ -57,7 +57,9 @@ const Footer = () => {
     <footer className="w-full py-8">
       <div className="flex md:items-center md:pl-8 flex-col md:flex-row gap-9 md:gap-0">
         <div className="md:w-[40%] flex flex-col pl-5 md:pl-0 md:justify-center gap-4">
-          <Image src="/Images/logo.svg" alt="logo" height={1} width={100} />
+          <Link href="#">
+            <Image src="/Images/logo.svg" alt="logo" height={1} width={100} />
+          </Link>
           <div className="flex md:w-[45%] items-center w-[50%] justify-between">
             <a href="#">
               <Image src="/Images/ig.svg" alt="logo" height={1} width={20} />

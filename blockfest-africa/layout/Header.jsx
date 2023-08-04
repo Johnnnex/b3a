@@ -66,7 +66,9 @@ const Header = () => {
     <header ref={header} className='bg-[#1a63e41a] header-nav fixed w-full py-3 z-[3]'>
       <div className="flex md:px-7 px-2 justify-between items-center">
         <div className="md:w-[15%] w-[50%]">
-          <Image src="/Images/logo.svg" alt="logo" height={1} width={130} />
+          <Link href="#">
+            <Image src="/Images/logo.svg" alt="logo" height={1} width={130} />
+          </Link>
         </div>
         <nav className="w-[80%] mainNav" ref={navRef}>
           <div className="flex flex-col md:flex-row items-center justify-between">
