@@ -33,20 +33,20 @@ const Timer = () => {
       }, [countDown])
   return (
     <section className="text-[#ffffff99] wow fadeInDown mt-[2rem] md:w-[60%] mx-auto w-[100%] md:mx-[20%] font-poppins py-[1.5rem]">
-        <div className="flex justify-evenly text-[1rem] items-center md:w-[70%] mx-auto">
-        <p className="font-[700] text-center md:text-left">
+        <div className="flex justify-evenly items-center md:w-[70%] mx-auto">
+        <p className="font-[700] md:text-[1.3rem] text-center md:text-left">
             {dy} <br />
             <small className="font-[100]">Day(s)</small>
         </p> :
-        <p className="font-[700] text-center md:text-left">
+        <p className="font-[700] md:text-[1.3rem] text-center md:text-left">
             {hrs} <br />
             <small className="font-[100]">Hours</small>
         </p> :
-        <p className="font-[700] text-center md:text-left">
+        <p className="font-[700] md:text-[1.3rem] text-center md:text-left">
             {min} <br />
             <small className="font-[100]">Minutes</small>
         </p> :
-        <p className="font-[700] text-center md:text-left">
+        <p className="font-[700] md:text-[1.3rem] text-center md:text-left">
             {sec} <br />
             <small className="font-[100]">Second(s)</small>
         </p> 

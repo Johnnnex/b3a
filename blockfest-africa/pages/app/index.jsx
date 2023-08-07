@@ -1,7 +1,7 @@
 import React from 'react'
-import Timer from '@/reusable component/Timer'
-import { PureImgLoader, ImgLoader } from "@/reusable component/img-loaders"
-import FAQ from '@/reusable component/FAQ'
+import Timer from '../../reusable component/Timer'
+import { PureImgLoader, ImgLoader } from "../../reusable component/img-loaders"
+import FAQ from '../../reusable component/FAQ'
 
 
 const Index = () => {
@@ -11,14 +11,14 @@ const Index = () => {
             <div className="h-[56%] flex flex-col justify-evenly">
                 <div className="w-fit mx-auto">
                     <h1 text-data="BUIDL•BRIDGE•BECOME" className="text-[#fff] hidden md:block wow fadeIn font-poppins font-[700] text-[2rem]">BUIDL•BRIDGE•BECOME</h1>
-                    <h2 className="text-[#fff] md:hidden wow fadeIn font-poppins font-[700] text-[2rem]">BUIDL •BRIDGE •BECOME</h2>
+                    <h2 className="text-[#fff] md:hidden text-center wow fadeIn font-poppins font-[700] text-[2rem]">BUIDL • BRIDGE • BECOME</h2>
                 </div>
-                <div className="md:text-center">
-                    <small className="text-[#fff] text-[1rem] wow fadeIn font-poppins">October 27th-28th, 2023. Lagos, Nigeria</small>
+                <div className="text-center">
+                    <small className="text-[#fff] text-[1rem] wow fadeIn font-poppins">October 27th-28th, 2023. <br />Lagos, Nigeria</small>
                 </div>
-                <div className="md:text-center wow fadeIn font-poppins">
+                <div className="text-center wow fadeIn font-poppins">
                     <a href="https://bit.ly/Sponsor-Blockfest-2023" target="_blank" rel="noopener noreferrer">
-                        <button className=" px-7 py-2 bg-[#1A63E4] text-white rounded-[5px]">Become a Sponsor</button>
+                        <button className=" px-7 py-2 bg-[#1A63E4] hover:shadow-xl shadow-[#1A63E4] bxshadw-bl text-white rounded-[5px]">Become a Sponsor</button>
                     </a>
                 </div>
                 <Timer />
@@ -27,15 +27,16 @@ const Index = () => {
         <section id="about" className="px-3 md:px-0 text-white md:pt-[5rem] pb-[4rem]">
             <div className="flex flex-col gap-5 md:gap-0 md:flex-row md:w-[80%] mx-auto md:justify-between md:items-center font-poppins">
                 <div className="md:w-[28%]">
-                    <h3 className="font-[600] wow fadeIn text-[2rem]">About BLOCKF3ST</h3>
+                    <h3 className="font-[600] anim-text hidden md:block wow fadeIn text-[2rem]">About BLOCKF3ST</h3>
+                    <h3 className="font-[600] md:hidden wow fadeIn text-[2rem]">About BLOCKF3ST</h3>
                 </div>
                 <div className="md:w-[60%] space-y-5">
                     <p className="wow fadeInUp">
-                    BLOCKF3ST is an annual developers, creatives, digital creators, traders festival that caters to the Web3 community. <br /><br />
+                    BLOCKF3ST is an annual developers, creatives, digital creators and traders festival that caters to the Web3 community. <br /><br />
 
-                    Our large scale all-inclusive fest comprises of panel sessions, networking forums, workshops, and pitches. Focusing on subject matters regrading the Crypto ecosystem, Fintech industries, developers education and cross fertilization of corporate careers into Web3. <br /><br />
+                    Our large scale all-inclusive fest comprises of panel sessions, networking forums, workshops and pitches. Focusing on subject matters regarding the crypto ecosystem, fintech industries, developers education and cross fertilization of corporate careers into Web3. <br /><br />
 
-                    WHAT’S MORE? We’re set to not only enlighten and network with the already bustling Web3 Experts and enthusiats but also posture as the creche for Entry level developers, budding designers, ambitious digital creators and marketers in affiliations with our cooperate organizations and community partners. <br /><br />
+                    WHAT’S MORE? We’re set to not only enlighten and network with the already bustling Web3 experts and enthusiasts but also posture as the creche for entry level developers, budding designers, ambitious digital creators and marketers in affiliations with our corporate organizations and community partners. <br /><br />
 
                     The flagship event is set to hold in the city that never sleeps-LAGOS,NIGERIA. <br /><br />
 
@@ -43,7 +44,7 @@ const Index = () => {
                     </p>
                     <div className="font-poppins">
                         <a href="https://bit.ly/Sponsor-Blockfest-2023" target="_blank" rel="noopener noreferrer">
-                            <button className="wow fadeIn px-7 py-2 bg-[#1A63E4] text-white rounded-[5px]">Partner wih us</button>
+                            <button className="wow fadeIn px-7 py-2 bxshadw-bl bg-[#1A63E4] text-white rounded-[5px]">Partner with us</button>
                         </a>
                 </div>
                 </div>

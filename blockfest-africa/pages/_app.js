@@ -1,6 +1,6 @@
-import Layout from '@/layout/Layout'
+import Layout from '../layout/Layout'
 import { useEffect } from 'react'
-import '@/styles/globals.css'
+import '../styles/globals.css'
 const isServer = typeof window === 'undefined'
 const WOW = !isServer ? require('wow.js') : null
 

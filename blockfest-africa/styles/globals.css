@@ -113,6 +113,43 @@ h1::before {
 .full-data ul li {
   list-style-type: circle !important;
 }
+.bxshadw-grn, .bxshadw-bl {
+  transition: .5s;
+}
+.bxshadw-grn:hover {
+  box-shadow: 0 0 10px #1BBE9F,
+  0 0 20px #1BBE9F,
+  0 0 40px #1BBE9F,
+  0 0 80px #1BBE9F,
+  0 0 160px #1BBE9F;
+}
+.bxshadw-bl:hover {
+  box-shadow: 0 0 10px #1A63E4,
+  0 0 20px #1A63E4,
+  0 0 40px #1A63E4,
+  0 0 80px #1A63E4,
+  0 0 160px #1A63E4 !important;
+}
+.anim-text {
+  -webkit-box-reflect: below 1px linear-gradient(transparent, #1A63E4);
+  line-height: 0.9em;
+  animation: textanim 5s linear infinite;
+}
+@keyframes textanim {
+  0%, 18%, 20%, 50.1%, 60%, 65.1%, 80%, 90.1%, 92%
+  {
+    color: #ffffff90;
+    text-shadow: none;
+  }
+  18.1%, 20.1%, 30%, 50%, 60.1%, 65%, 80.1%, 90%, 92.1%, 100% {
+    color: #fff;
+    text-shadow: 0 0 10px #1A63E4,
+    0 0 20px #1A63E4,
+    0 0 40px #1A63E4,
+    0 0 80px #1A63E4,
+    0 0 160px #1A63E4;
+  }
+}
 @media all and (max-width: 768px){
   .mainNav{
       position: fixed;
@@ -126,6 +163,9 @@ h1::before {
       align-items: center;
       transition: all .5s;
       background-color: #1a63e4ee;
+  }
+  header {
+    padding-block: 0 !important;
   }
   li {
       margin-bottom: 2rem;

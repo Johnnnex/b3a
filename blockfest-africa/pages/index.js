@@ -1,5 +1,5 @@
 
-import HeadComp from '@/layout/HeadComp'
+import HeadComp from '../layout/HeadComp'
 import Index from './app'
 
 

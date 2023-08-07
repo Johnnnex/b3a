@@ -64,10 +64,10 @@ const Header = () => {
   }, [setStates])
   return (
     <header ref={header} className='bg-[#1a63e41a] header-nav fixed w-full py-3 z-[3]'>
-      <div className="flex md:px-7 px-2 justify-between items-center">
+      <div className="flex md:px-7 bg-[#1a63e4dd] md:bg-transparent px-2 justify-between items-center">
         <div className="md:w-[15%] w-[50%]">
           <Link href="#">
-            <Image src="/Images/logo.svg" alt="logo" height={1} width={130} />
+            <Image className="cursor-pointer" src="/Images/logo.svg" alt="logo" height={50} width={130} />
           </Link>
         </div>
         <nav className="w-[80%] mainNav" ref={navRef}>
@@ -85,7 +85,7 @@ const Header = () => {
               </li>
               <li className={`${partner} nav-list py-1 px-3`}>
                 <Link href="#patners">
-                  Patners
+                  Partners
                 </Link>
               </li>
               <li className={`${schedule} nav-list py-1 px-3`}>
@@ -100,7 +100,7 @@ const Header = () => {
               </li>
             </ul>
             <div className="md:w-[20%] font-poppins">
-              <button className=" px-7 py-2 bg-[#1BBE9F] text-white rounded-[5px]">Register now</button>
+              <button className=" px-7 py-2 bg-[#1BBE9F] bxshadw-grn transition-[.5s] text-white rounded-[5px]">Register now</button>
             </div>
           </div>
         </nav>
@@ -108,7 +108,7 @@ const Header = () => {
       <div
 				onClick={handleClick}
 				ref={burgerRef}
-				className=" pr-4 space-y-1 block md:hidden z-[999] fixed right-0"
+				className=" pr-4 space-y-1 block top-[4vh] md:hidden z-[999] fixed right-0"
 			>
 				<svg
 					width="21"

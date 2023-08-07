@@ -85,10 +85,10 @@ const FAQ = () => {
   return (
     <section id="FAQ" className=" pt-[7rem]">
         <h3 className="wow fadeInDown font-poppins text-center text-white text-3xl font-[600] mb-[2rem]">
-            You've Got <span className="text-[#1A63E4]">Questions?</span> <br />
+            You&apos;ve Got <span className="text-[#1A63E4]">Questions?</span> <br />
             <span className='text-[1.2rem]'>Great! Cause We Have Answers!</span>
         </h3>
-        <div className="wow fadeInUp w-[90%] md:w-3/5 mx-auto text-white p-[1rem] md:p-[3rem] rounded-[8px] space-y-[2rem]">
+        <div className="wow fadeInUp w-[100%] md:w-3/5 mx-auto text-white p-[1rem] md:p-[3rem] rounded-[8px] space-y-[2rem]">
             <div
                 ref={One}
                 className=" overflow-hidden relative rounded-[5px] p-2 mx-auto space-y-[1rem]"
@@ -103,7 +103,7 @@ const FAQ = () => {
                     </button>
                 </div>
                 <p className="font-poppins duration-500 md:translate-y-[-13rem] translate-y-[-43rem] absolute">
-                    Ever thought of a convention point of builders in the Web3 Ecosystem- Developers, creatives, traders, investors & community builders, Well, BLOCKF3ST AFRICA is it, and More!
+                    Ever thought of a convention point of builders in the Web3 Ecosystem? from Developers, creatives, traders, investors & community builders, Well, BLOCKF3ST AFRICA is it, and More!
                 </p>
             </div>
             <div
@@ -120,7 +120,8 @@ const FAQ = () => {
                     </button>
                 </div>
                 <p className="font-poppins duration-500 md:translate-y-[-33rem] translate-y-[-43rem] absolute">
-                    Seeing most events either cater to just the Finance, Tech, Fintech, developers, creatives or traders only community, BLOCKF3ST is on a mission to bring together the individuals that make the dream team of any infrastructure foster unity, mentoring, scholarships, opportunities in the cooperate world and virgin ground for investors and employers.
+                    Seeing most events either cater to just the finance, tech, fintech, developers, creatives or traders only community, BLOCKF3ST is on a mission to bring together the individuals that make the dream team of any infrastructure. <br />
+                    To foster unity, mentoring, scholarships and opportunities in the cooperate world and virgin ground for investors and employers.
                 </p>
             </div>
             <div
@@ -284,7 +285,7 @@ const FAQ = () => {
                     </button>
                 </div>
                 <p className="font-poppins duration-500 md:translate-y-[-13rem] translate-y-[-23rem] absolute">
-                    Application will be out soon. Stay updated on our socials, so as not to miss out on it
+                    Apply <a href="https://bit.ly/B3AVolunteers" className=" text-[#1A63E4]" target="_blank" rel="noopener noreferrer">Here</a>
                 </p>
             </div>
             <div
