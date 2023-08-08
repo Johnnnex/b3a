@@ -3,7 +3,7 @@ import Image from 'next/image'
 import {useRouter} from 'next/router'
 import Link from 'next/link'
 
-const Header = () => {
+const Header = ({comingSoon}) => {
   const header = useRef()
   const router = useRouter()
   const navRef = useRef();
@@ -14,6 +14,10 @@ const Header = () => {
   const [schedule, setSchedule] = useState()
   const [faq, setFaq] = useState()
 
+  const removeNav = () => {
+    navRef.current.classList.remove("showNav");
+		burgerRef.current.classList.remove("burgerNav");
+  }
   const setStates = useCallback(() => {
     if(router.asPath == "/#about") {
       setAbout("active")
@@ -21,6 +25,7 @@ const Header = () => {
       setSpeaker("")
       setSchedule("")
       setFaq("")
+      removeNav()
     }
     else if (router.asPath == "/#speakers") {
       setSpeaker("active")
@@ -28,6 +33,7 @@ const Header = () => {
       setPatner("")
       setSchedule("")
       setFaq("")
+      removeNav()
     }
     else if (router.asPath == "/#patners") {
       setPatner("active")
@@ -35,6 +41,7 @@ const Header = () => {
       setSpeaker("")
       setSchedule("")
       setFaq("")
+      removeNav()
     }
     else if (router.asPath == "/#schedule") {
       setSchedule("active")
@@ -42,6 +49,7 @@ const Header = () => {
       setPatner("")
       setSpeaker("")
       setFaq("")
+      removeNav()
     }
     else if (router.asPath == "/#FAQ") {
       setFaq("active")
@@ -49,6 +57,7 @@ const Header = () => {
       setPatner("")
       setSpeaker("")
       setSchedule("")
+      removeNav()
     }
   }, [router.asPath])
 
@@ -62,9 +71,13 @@ const Header = () => {
       })
       setStates()
   }, [setStates])
+  const dblFnc = () => {
+    removeNav()
+    comingSoon()
+  }
   return (
-    <header ref={header} className='bg-[#1a63e41a] header-nav fixed w-full py-3 z-[3]'>
-      <div className="flex md:px-7 bg-[#1a63e4dd] md:bg-transparent px-2 justify-between items-center">
+    <header ref={header} className='md:bg-[#1a63e41a] header-nav fixed w-full py-3 z-[3] items-center flex'>
+      <div className="flex md:px-7 flex-1 px-2 justify-between items-center">
         <div className="md:w-[15%] w-[50%]">
           <Link href="#">
             <Image className="cursor-pointer" src="/Images/logo.svg" alt="logo" height={50} width={130} />
@@ -99,8 +112,8 @@ const Header = () => {
                 </Link>
               </li>
             </ul>
-            <div className="md:w-[20%] font-poppins">
-              <button className=" px-7 py-2 bg-[#1BBE9F] bxshadw-grn transition-[.5s] text-white rounded-[5px]">Register now</button>
+            <div className="pr-[2vw] flex-1 text-right font-poppins">
+              <button onClick={dblFnc} className=" px-7 py-2 bg-[#1BBE9F] bxshadw-grn transition-[.5s] text-white rounded-[5px]">Register now</button>
             </div>
           </div>
         </nav>
@@ -108,7 +121,7 @@ const Header = () => {
       <div
 				onClick={handleClick}
 				ref={burgerRef}
-				className=" pr-4 space-y-1 block top-[4vh] md:hidden z-[999] fixed right-0"
+				className=" pr-4 space-y-1  md:hidden z-[999]"
 			>
 				<svg
 					width="21"
