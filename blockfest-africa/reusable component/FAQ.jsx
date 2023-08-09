@@ -84,11 +84,11 @@ const FAQ = () => {
 	};
   return (
     <section id="FAQ" className=" pt-[7rem]">
-        <h3 className="wow fadeInDown font-poppins text-center text-white text-3xl font-[600] mb-[2rem]">
+        <h3 className="wow fadeIn font-poppins text-center text-white text-3xl font-[600] mb-[2rem]">
             You&apos;ve Got <span className="text-[#1A63E4]">Questions?</span> <br />
             <span className='text-[1.2rem]'>Great! Cause We Have Answers!</span>
         </h3>
-        <div className="wow fadeInUp w-[100%] md:w-3/5 mx-auto text-white p-[1rem] md:p-[3rem] rounded-[8px] space-y-[2rem]">
+        <div className="wow fadeIn w-[100%] md:w-3/5 mx-auto text-white p-[1rem] md:p-[3rem] rounded-[8px] space-y-[2rem]">
             <div
                 ref={One}
                 className=" overflow-hidden relative rounded-[5px] p-2 mx-auto space-y-[1rem]"
