@@ -16,7 +16,7 @@ const Index = () => {
                     <h2 className="text-[#fff] md:hidden text-center wow fadeIn font-poppins font-[700] text-[2rem]">BUIDL • BRIDGE • BECOME</h2>
                 </div>
                 <div className="text-center">
-                    <small className="text-[#fff] text-[1rem] wow fadeIn font-poppins">October 27th-28th, 2023. <br />Lagos, Nigeria</small>
+                    <small className="text-[#FFFFFFCC] text-[1rem] wow fadeIn font-poppins">October 27th-28th, 2023. <br />Lagos, Nigeria</small>
                 </div>
                 <div className="text-center wow fadeIn font-poppins">
                     <a href="https://bit.ly/Sponsor-Blockfest-2023" target="_blank" rel="noopener noreferrer">
@@ -37,7 +37,7 @@ const Index = () => {
                     <h3 className="font-[600] md:hidden wow fadeIn text-[2rem]">BLOCKF3ST</h3>
                 </div>
                 <div className="md:w-[60%] space-y-5">
-                    <p className="wow fadeInUp">
+                    <p className="wow text-[#FFFFFFCC] fadeInUp">
                     BLOCKF3ST is an annual developers, creatives, digital creators and traders festival that caters to the Web3 community. <br /><br />
 
                     Our large scale all-inclusive fest comprises of panel sessions, networking forums, workshops and pitches. Focusing on subject matters regarding the crypto ecosystem, fintech industries, developers education and cross fertilization of corporate careers into Web3. <br /><br />
