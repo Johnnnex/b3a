@@ -114,21 +114,13 @@ h1::before {
   list-style-type: circle !important;
 }
 .bxshadw-grn, .bxshadw-bl {
-  transition: .5s;
+  transition: .4s;
 }
 .bxshadw-grn:hover {
-  box-shadow: 0 0 10px #1BBE9F,
-  0 0 20px #1BBE9F,
-  0 0 40px #1BBE9F,
-  0 0 80px #1BBE9F,
-  0 0 160px #1BBE9F;
+  box-shadow: 0 0 10px #1BBE9F;
 }
 .bxshadw-bl:hover {
-  box-shadow: 0 0 10px #1A63E4,
-  0 0 20px #1A63E4,
-  0 0 40px #1A63E4,
-  0 0 80px #1A63E4,
-  0 0 160px #1A63E4 !important;
+  box-shadow: 0 0 10px #1A63E4 !important;
 }
 .anim-text {
   -webkit-box-reflect: below 1px linear-gradient(transparent, #1A63E4);
