@@ -63,6 +63,10 @@ header {
 .nav-list:hover, .active {
   color: #1A63E4;
 }
+/* .neumorphic{
+  box-shadow: inset -3px -3px 7px #ffffffb0, 
+         inset 3px 3px 5px rgba(94, 104, 121, 0.692);
+} */
 .active::before,
 .active::after {
   width: 100%;
