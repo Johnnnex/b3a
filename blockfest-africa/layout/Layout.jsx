@@ -8,7 +8,7 @@ const Layout = ({children}) => {
     const moreInfo = useRef()
     const showMoreInfo = () => {
 		moreInfo.current.classList.remove("scale-0", "translate-y-[-30rem]");
-		body.current.classList.add("h-[70vh]", "overflow-hidden", "blur-[10px]", "pointer-events-none");
+		body.current.classList.add("blur-[10px]", "pointer-events-none");
 	};
 	const showLessInfo = () => {
 		moreInfo.current.classList.add("scale-0", "translate-y-[-30rem]");
@@ -25,7 +25,7 @@ const Layout = ({children}) => {
         <section ref={body}>
           {children}
         </section>
-        <section ref={moreInfo} className="transition-[.5s] scale-0 translate-y-[-30rem] text-white border-[#808080] top-[30vh] absolute rounded-[10px] border md:w-[30%] w-[90%] md:mx-[35%] mx-[5%] bxshadw">
+        <section ref={moreInfo} className="transition-[.5s] scale-0 translate-y-[-30rem] text-white border-[#808080] top-[30vh] fixed rounded-[10px] border md:w-[30%] w-[90%] md:mx-[35%] mx-[5%] bxshadw">
             <div className=" translate-y-[-50%] flex items-center justify-center mx-auto w-fit rounded-[50%] p-3 bg-[#1a63e4]">
                 <Image src="/Images/load.gif" height={40} width={40} alt="gif" />
             </div>
