@@ -23,7 +23,7 @@ const Index = () => {
                         <button className=" px-7 py-2 bg-[#1A63E4] bxshadw-bl text-white rounded-[5px]">Become a Sponsor</button>
                     </a>
                 </div>
-                <Timer />
+                {/* <Timer /> */}
             </div>
         </section>
         <section id="about" className="px-3 md:px-0 text-white pt-[3rem] md:pt-[5rem] pb-[4rem]">
